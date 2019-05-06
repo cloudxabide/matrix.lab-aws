@@ -9,10 +9,11 @@ In my home lab, there will be a few key components:
 
 ## Inventory
 
-Host | IP | Purpose | Services
-|:--|:--:|:----|:-----
+Host | IP | Hardware | Purpose | Services
+|:--|:--:|:----|:-----|:----
 gateway | 10.10.10.1 | Sophos XG | Firewall | NAT
 switch | 10.10.10.2 | Cisco SG300-28 | Layer 2 Switch | Switching yo
+wifi | 10.10.10.9 | Apple Airport | Wireless LAN | Comms with Aliens
 zion | 10.10.10.10 | | KVM Host | Virtualization
 apoc | 10.10.10.18 | | KVM Host | Virtualization
 | -- | -- | -- | -- |
