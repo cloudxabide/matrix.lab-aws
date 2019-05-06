@@ -9,6 +9,7 @@ In my home lab, there will be a few key components:
 
 ## Inventory
 
+### Physical Hosts
 Host     | IP           | Hardware                                             | Purpose        | Services
 |:-------|:------------:|:-----------------------------------------------------|:---------------|:-----------------
 gateway  | 10.10.10.1   | Sophos XG                                            | Firewall       | NAT
@@ -20,7 +21,11 @@ trinity  | 10.10.10.12  | HHP ProLiant ML30 Gen9, Xeon(R) CPU E3-1220 v5 , 31G |
 morpheus | 10.10.10.13  | HP ProLiant ML30 Gen9, Xeon(R) CPU E3-1220 v6 , 15G  | Hypervisor     | Virtualization
 sati     | 10.10.10.17  | NUC7i7BNB, Core(TM) i7-7567U CPU , 7.5G              | TBD            | TBD 
 apoc     | 10.10.10.18  | ASUS X99-PRO/USB 3.1, Xeon(R) CPU E5-2630 v3 , 64G   | KVM Host       | Virtualization
+
+### Virtual Machines (long-lived)
+Host     | IP           | Hardware                                             | Purpose        | Services
 |:-------|:------------:|:-----------------------------------------------------|:---------------|:-----------------
+co7-nms-srv01 | 10.10.10.110 | Virtual Machine | LibreNMS Monitoring | Monitoring
 co7-ipa-srv01 | 10.10.10.121 | Virtual Machine | IdM server | DNS, LDAPS
 co7-ipa-srv02 | 10.10.10.122 | Virtual Machine | IdM server | DNS, LDAPS
 

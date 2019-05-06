@@ -1,6 +1,6 @@
 # resources.md
 
-## Links for VPN
+## VPN foo
 This links are currated specific to my own environment and purpose.  (i.e. home lab + Sophos XG to several different AWS setup (i.e. single VPC, multi-VPC using Transit Gateway)
 
 AWS Site-to-Site VPN  
