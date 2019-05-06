@@ -11,8 +11,13 @@ In my home lab, there will be a few key components:
 
 Host | IP | Purpose | Services
 |:--|:--:|:----|:-----
-co7-ipa-srv01 | 10.10.10.121 | IdM server | DNS, LDAPS
-co7-ipa-srv02 | 10.10.10.122 | IdM server | DNS, LDAPS
+gateway | 10.10.10.1 | Sophos XG | Firewall | NAT
+switch | 10.10.10.2 | Cisco SG300-28 | Layer 2 Switch | Switching yo
+zion | 10.10.10.10 | | KVM Host | Virtualization
+apoc | 10.10.10.18 | | KVM Host | Virtualization
+| -- | -- | -- | -- |
+co7-ipa-srv01 | 10.10.10.121 | Virtual Machine | IdM server | DNS, LDAPS
+co7-ipa-srv02 | 10.10.10.122 | Virtual Machine | IdM server | DNS, LDAPS
 
 
 
