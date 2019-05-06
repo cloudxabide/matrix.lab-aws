@@ -1,0 +1,29 @@
+/*Created April 12th 2018 to support the Sophos Alert Banner.  Original CSS written by MDR.*/
+.red_alert {
+	background: #ff0b0b;
+	color: #ffffff;
+ }
+ 
+ .amber_alert {
+	background: #e9cb3c;
+	color: #000000;
+ }
+ 
+ .green_alert {
+	background: #13b531;
+	color: #ffffff;
+ }
+ 
+ .red_alert a:link, .red_alert a:visited {
+	color: #daecff;
+ }
+ 
+ .green_alert a:link, .green_alert a:visited {
+	color: #daecff;
+ }
+ 
+ p.sophos_banner {
+	text-align: center;
+	font-size: 75%;
+	padding: 0.5em;
+ }
