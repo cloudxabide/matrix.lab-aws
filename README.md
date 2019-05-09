@@ -15,6 +15,7 @@ This repo chronicles the deployment of a Hybrid Cloud consisting of AWS and an o
   * Several EC2 instances (to test connectivity)
   * route 53 resolver (hybrid DNS, conditional forwarding)
 
+
 * Homelab Environment
   * Sophos XG85
   * Cisco SG300-28 Managed Switch
