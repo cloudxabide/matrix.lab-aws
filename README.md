@@ -29,6 +29,7 @@ This repo chronicles the deployment of a Hybrid Cloud consisting of AWS and an o
 ![Hybrid-Single_Account.png](Images/Hybrid-Single_Account.png)
 
 ## Implementation - The Steps
+You should be able to follow the following implementation guide and have an operational "hybrid cloud" setup once done.  
 [implementation.md](implementation.md)
 
 ## NOTES
