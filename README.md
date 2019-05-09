@@ -28,8 +28,8 @@ This repo chronicles the deployment of a Hybrid Cloud consisting of AWS and an o
 ## Layout
 ![Hybrid-Single_Account.png](Images/Hybrid-Single_Account.png)
 
-## The Steps
-[deploy.md](deploy.md)
+## Implementation - The Steps
+[implementation.md](implementation.md)
 
 ## NOTES
 This is not easy, but it *is* straight-forward.  
