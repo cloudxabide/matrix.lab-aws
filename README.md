@@ -17,13 +17,13 @@ This repo chronicles the deployment of a Hybrid Cloud consisting of AWS and an o
 
 
 * Homelab Environment
- * Sophos XG85
- * Cisco SG300-28 Managed Switch
- * CentOS 7.6 (at the time of writing this)
- * oVirt (Community version Red Hat Virtualization)
- * okd (Essentially the community version of Red Hat OpenShift)
- * [libreNMS](https://www.librenms.org/) 
- * fairly standard Commidity Off The Shelf (COTS) hardware
+ ** Sophos XG85
+ ** Cisco SG300-28 Managed Switch
+ ** CentOS 7.6 (at the time of writing this)
+ ** oVirt (Community version Red Hat Virtualization)
+ ** okd (Essentially the community version of Red Hat OpenShift)
+ ** [libreNMS](https://www.librenms.org/) 
+ ** fairly standard Commidity Off The Shelf (COTS) hardware
 
 ## Layout
 ![Hybrid-Single_Account.png](Images/Hybrid-Single_Account.png)
