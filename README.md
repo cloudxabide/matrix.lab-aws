@@ -1,38 +1,30 @@
 # matrix.lab
-My Home Lab used for testing Hybrid Cloud
+My Home Lab used for testing Hybrid Cloud  
+Version: 2019-05-10
 
 ## Overview
-In my home lab, there will be a few key components:
- * Sophos XG firewall (VPN endpoint)
- * a few KVM hosts
- * oVirt cluster
-
-## Inventory
-
-### Physical Hosts
-Host     | IP           | Hardware                                             | Purpose        | Services
-|:-------|:------------:|:-----------------------------------------------------|:---------------|:-----------------
-gateway  | 10.10.10.1   | Sophos XG                                            | Firewall       | NAT
-switch   | 10.10.10.2   | Cisco SG300-28                                       | Layer 2 Switch | Switching yo
-wifi     | 10.10.10.9   | Apple Airport                                        | Wireless LAN   | Comms with Aliens
-zion     | 10.10.10.10  | NUC5i5RYB, Core(TM) i5-5250U CPU, 15G                | KVM Host       | Virtualization
-neo      | 10.10.10.11  | HP ProLiant ML30 Gen9, Xeon(R) CPU E3-1220 v5 , 31G  | Hypervisor     | Virtualization
-trinity  | 10.10.10.12  | HHP ProLiant ML30 Gen9, Xeon(R) CPU E3-1220 v5 , 31G | Hypervisor     | Virtualization
-morpheus | 10.10.10.13  | HP ProLiant ML30 Gen9, Xeon(R) CPU E3-1220 v6 , 15G  | Hypervisor     | Virtualization
-sati     | 10.10.10.17  | NUC7i7BNB, Core(TM) i7-7567U CPU , 7.5G              | TBD            | TBD 
-apoc     | 10.10.10.18  | ASUS X99-PRO/USB 3.1, Xeon(R) CPU E5-2630 v3 , 64G   | KVM Host       | Virtualization
-
-### Virtual Machines (long-lived)
-Host     | IP           | Hardware                                             | Purpose        | Services
-|:-------|:------------:|:-----------------------------------------------------|:---------------|:-----------------
-co7-nms-srv01 | 10.10.10.110 | Virtual Machine | LibreNMS Monitoring | Monitoring
-co7-ipa-srv01 | 10.10.10.121 | Virtual Machine | IdM server | DNS, LDAPS
-co7-ipa-srv02 | 10.10.10.122 | Virtual Machine | IdM server | DNS, LDAPS
+This repo chronicles the deployment of a Hybrid Cloud consisting of AWS and an on-premises Open Source cloud (based on community Red Hat bits)  
+### The Environments
+* AWS Environment 
+ * single-account 
+ * multi-VPC 
+ * Transit Gateway
+ * Site-to-Site VPN
+ * 2 x Public Subnets (per VPC)
+ * 2 x Private Subnets (per VPC)
+ * Several EC2 instances (to test connectivity)
+ * route 53 resolver (hybrid DNS, conditional forwarding)
 
 
+* Homelab Environment
+ * Sophos XG85
+ * Cisco SG300-28 Managed Switch
+ * CentOS 7.6 (at the time of writing this)
+ * oVirt (Community version Red Hat Virtualization)
+ * okd (Essentially the community version of Red Hat OpenShift)
+ * [libreNMS](https://www.librenms.org/) 
+ * fairly standard Commidity Off The Shelf (COTS) hardware
 
-## Topics
-### AWS VPN site-to-site with single VPC 
-
-### AWS VPN site-to-site with multiple VPC using Transit Gateway
+## Layout
+![Hybrid-Single_Account.png](Images/Hybrid-Single_Account.png)
 
