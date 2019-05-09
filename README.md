@@ -17,7 +17,7 @@ This repo chronicles the deployment of a Hybrid Cloud consisting of AWS and an o
 
 
 * Homelab Environment
-** Sophos XG85
+  * Sophos XG85
 
  ** Cisco SG300-28 Managed Switch
  ** CentOS 7.6 (at the time of writing this)
