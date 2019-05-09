@@ -32,4 +32,5 @@ This repo chronicles the deployment of a Hybrid Cloud consisting of AWS and an o
 [deploy.md](deploy.md)
 
 ## NOTES
-This is not easy, but it is straight-forward.  This repo does NOT provide an in-depth review of the core functionality/services that are being utilized.  (i.e. you have to know why an Internet Gateway is used in some cases, and a NAT Gateway, in others - if you really want to know what is going on here)..
+This is not easy, but it *is* straight-forward.  
+This repo does NOT provide an in-depth review of the core functionality/services that are being utilized.  (i.e. you have to know why an Internet Gateway is used in some cases, and a NAT Gateway, in others - if you really want to know what is going on here)..
