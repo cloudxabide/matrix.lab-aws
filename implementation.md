@@ -36,7 +36,10 @@ See below for links to the references to see what my Toplogy is and what my subn
   Click on "NAT Gateways" and "Create NAT Gateway".  Now - this is (possibly) counter-intuitive, but select your "public subnets".
   Select a public subnet and click "Create New EIP" then "Create a NAT Gateway"
   You should wait for a few minutes, but eventually you will see you have a Elastic IP Address, Private IP Address.
-
+* Create an EC2 instance in each subnet
+  be sure to select the correct Subnets and Security Groups
+  I will typically provide a name in the EC2 Instances summary screen as soon as I create the instance (like: EC2-AppA-Pub-10.0.0.0
+  ) otherwise, things can get confusing.  (IP Address should provide a good hint where the instance is though)
 
 
 ## Sophos Setup
