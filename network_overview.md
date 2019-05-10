@@ -25,6 +25,10 @@ RTB-AppA-Public
 ## Security Groups
 SG-AppA-pub-SSH
 SG-AppB-pub-SSH
+SG-AppA-priv-SSH
+SG-AppB-priv-SSH
+
+## NAT Gateways (NGW)
 
 # Transit Gateway Route Tables
 
