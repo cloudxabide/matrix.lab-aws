@@ -13,6 +13,7 @@ See below for links to the references to see what my Toplogy is and what my subn
 * Create 4 subnets in each VPC (we will make 2 x public after they are created)  
   Click on Subnets in the left-hand panel and click Create Subnet  
   reference [network_overview.md](network_overview.md) for IP/subnet info  
+  NOTE:  I manually distribute my Subnets to different AZs to allow for an Network Load Balancer (NLB) later  
 * Create and Attach IGW to each VPC
 * Create Route Tables and associate with Public Subnets
 
