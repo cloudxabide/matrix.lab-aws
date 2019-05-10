@@ -14,7 +14,7 @@ PrivateSubnet1CIDR | 10.0.1.0/24   | 10.1.1.0/24
 ## Route Table
 Name               | Environment 1 | Environment 2 |
 :--|:--:|:--:|
-Public             | VPC-A         | VPC-B
+VPC                | VPC-AppA      | VPC-AppB
 
 # Transit Gateway Route Tables
 
