@@ -3,7 +3,7 @@
 
 ## Subnet Layout
 Name               | Environment 1 | | Environment 2 | |
-:--|:--:|:--:|
+:--|:--:|:--:|:--|:--:|:--:|
 VPC                | VPC-AppA     | | VPC-AppB
 VPCCidr            | 10.0.0.0/16  | 10.1.0.0/16
 PublicSubnet0CIDR  | 10.0.0.0/24  | Subnet-AppA-pub-10.0.0.0 | Subnet-AppB-pub-10.1.0.0 | 10.1.0.0/24 
