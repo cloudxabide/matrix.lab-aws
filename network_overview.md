@@ -30,6 +30,11 @@ SG-AppB-priv-SSH
 
 ## NAT Gateways (NGW)
 
+# Transit Gateway 
+# Transit Gateway Attachments
+ATT-VPC-AppA  
+ATT-VPC-AppB
+
 # Transit Gateway Route Tables
 
 
