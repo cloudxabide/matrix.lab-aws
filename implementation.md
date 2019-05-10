@@ -10,7 +10,7 @@ See below for links to the references to see what my Toplogy is and what my subn
 * Create 2 x VPCs   
   Click Services and in text box "Find a service..." type "VPC" and select VPC
 
-* Create 4 subnets in each VPC (2 x public, 2 x private)  
+* Create 4 subnets in each VPC (we will make 2 x public after they are created)  
   Click on Subnets in the left-hand panel and click Create Subnet  
   reference [network_overview.md](network_overview.md) for IP/subnet info  
 * Create and Attach IGW to each VPC
