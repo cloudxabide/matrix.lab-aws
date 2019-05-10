@@ -54,14 +54,14 @@ Then see if you can ssh to your Private EC2 instance in the same VPC, then the o
   Select the only Transit Gateway ID* that should be available
   Attachment type: VPC
   Provide an Attachment name tag and then select a VPC.  Leave ALL the subnets selected and click "Create attachment"
-* Create Transit Gateway Attachments for the VPN
+* Create Transit Gateway Attachments for the VPN 
   Click on Transit Gateway Attachments and "Create Transit Gateway Attachment".
   Select the only Transit Gateway ID* that should be available
   Attachment type: VPN
   Customer Gateway: New 
   IP Address: (public IP of your VPN endpoint (Customer Gateway)
   I have selected "static" for Routing Options (need to double-check that this is optimal, even if it works this way)
-  Click "Create attachment" and wait for it to change state to "available"
+  Click "Create attachment" and wait for it to change state to "available" (probably 5 minutes?) - I use this time to "name" my attachment.
 
 ## Sophos Setup
 
