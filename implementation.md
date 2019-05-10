@@ -48,7 +48,7 @@ Then see if you can ssh to your Private EC2 instance in the same VPC, then the o
 * Create a Transit Gateway
  Click on Transit Gateways and "Create Transit Gateway" - provide a Name tag and Description.
  I have been selecting "Auto accept shared attachments"
-
+ Wait for it to change state
 
 ## Sophos Setup
 
