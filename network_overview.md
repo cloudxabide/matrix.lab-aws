@@ -20,7 +20,11 @@ IGW-AppB
 Name               | Environment 1 | Environment 2 |
 :--|:--:|:--:|
 VPC                | VPC-AppA      | VPC-AppB
+RTB-AppA-Public
 
+## Security Groups
+SG-AppA-pub-SSH
+SG-AppB-pub-SSH
 
 # Transit Gateway Route Tables
 
