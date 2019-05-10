@@ -28,7 +28,8 @@ See below for links to the references to see what my Toplogy is and what my subn
     **_NOTE:_**  Here is a "double tab"
 
 ## References
-[network_overview.md](network_overview.md)
-[inventory.md](inventory.md)
-427832613400
-012345678901
+[network_overview.md](network_overview.md)  
+[inventory.md](inventory.md)  
+
+
+
