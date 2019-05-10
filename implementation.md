@@ -4,9 +4,7 @@
 ## AWS 
 
 * Create 2 VPCs 
-  * 10.0.0.0/16
-  * 10.1.0.0/16
-
+* Create 4 subnets in each VPC (2 x public, 2 x private)
 
 
 
