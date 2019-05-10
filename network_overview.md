@@ -2,7 +2,7 @@
 
 
 ## Subnet Layout
-Name               | Environment 1 | | Environment 2 |
+Name               | Environment 1 | | Environment 2 | |
 :--|:--:|:--:|
 VPC                | VPC-AppA     | | VPC-AppB
 VPCCidr            | 10.0.0.0/16  | 10.1.0.0/16
