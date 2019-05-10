@@ -49,6 +49,13 @@ Then see if you can ssh to your Private EC2 instance in the same VPC, then the o
  Click on Transit Gateways and "Create Transit Gateway" - provide a Name tag and Description.
  I have been selecting "Auto accept shared attachments"
  Wait for it to change state
+* Create Transit Gateway Attachments in each VPC
+  Click on Transit Gateway Attachments and "Create Transit Gateway Attachment".
+  Select the only Transit Gateway ID* that should be available
+  Attachment type: VPC
+  Provide an Attachment name tag and then select a VPC.  Leave ALL the subnets selected and click "Create attachment"
+* Create Site-to-Site VPN Connection
+  Click on "Site-to-Site VPN Connections"
 
 ## Sophos Setup
 
