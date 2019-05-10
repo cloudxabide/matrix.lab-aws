@@ -45,6 +45,10 @@ See below for links to the references to see what my Toplogy is and what my subn
 Login to one of your Public EC2 instances... see if you can ssh to your other Public EC2 instance (first in the same VPC, then the other VPC).
 Then see if you can ssh to your Private EC2 instance in the same VPC, then the other VPC.  At this point, you will NOT be able to connect from one VPC to the other.
 
+* Create a Transit Gateway
+ Click on Transit Gateways and "Create Transit Gateway" - provide a Name tag and Description.
+ I have been selecting "Auto accept shared attachments"
+
 
 ## Sophos Setup
 
