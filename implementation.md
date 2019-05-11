@@ -62,8 +62,24 @@ Then see if you can ssh to your Private EC2 instance in the same VPC, then the o
   IP Address: (public IP of your VPN endpoint (Customer Gateway)
   I have selected "static" for Routing Options (need to double-check that this is optimal, even if it works this way)
   Click "Create attachment" and wait for it to change state to "available" (probably 5 minutes?) - I use this time to "name" my attachment.
+  NOTE:  This step will create a "Site-to-Site VPN Connection" as well as a "Customer Gateway"
+* Download the VPN Configuration
+  Click on "Site-to-Site VPN Connections" and select your VPN connection.
+  Click on "Download Configuration" and seelct Vendor: Generic, Platform: Generic, Software: Vendor Agnostic and save the txt file.
+
+
+* Go do the Sophos stuff....
+
+* Update Transit Gateway Route Tables to include on-prem
+  Click on "Transit Gateway Route Tables" and select your tgw
+  Click on Routes towards the bottom and click "Create Route"
+  Enter your CIDR and select your VPN TGW Attachment
+* Update your Public/Private Route Tables
+  Click on each Route Table and "Edit Routes" and "Add Route" enter your on-prem CIDR and for the target, select your TGW and click "Save Routes"
+
 
 ## Sophos Setup
+
 
 ## Testing
 
