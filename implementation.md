@@ -78,7 +78,7 @@ Then see if you can ssh to your Private EC2 instance in the same VPC, then the o
   Click on each Route Table and "Edit Routes" and "Add Route" enter your on-prem CIDR and for the target, select your TGW and click "Save Routes"
 
 
-## Sophos Setup
+## On-premises Sophos Setup
 
 
 ## Testing
