@@ -22,7 +22,7 @@ This repo chronicles the deployment of a Hybrid Cloud consisting of AWS and an o
   * oVirt (Community version Red Hat Virtualization)
   * okd (Essentially the community version of Red Hat OpenShift)
   * [libreNMS](https://www.librenms.org/) 
-  * fairly standard Commidity Off The Shelf (COTS) hardware
+  * fairly standard Commodity Off The Shelf (COTS) hardware
 
 ## Layout
 ![Hybrid-Single_Account.png](Images/Hybrid-Single_Account.png)
