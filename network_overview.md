@@ -30,11 +30,17 @@ SG-AppB-priv-SSH
 
 ## NAT Gateways (NGW)
 
-# Transit Gateway 
+# Transit Gateway  
+
 # Transit Gateway Attachments
 ATT-VPC-AppA  
 ATT-VPC-AppB
 
 # Transit Gateway Route Tables
 
+# route53 resolver
+
+I get the feeling I need to rethink/revisit this one.  There should be "utility" VPCs dedicated to this... which allow other VPCs to communicate.
+r53-inbound-endpoint-AppA
+r53-outbound-endpoint-AppA
 
