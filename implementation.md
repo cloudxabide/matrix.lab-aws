@@ -121,12 +121,6 @@ Then see if you can ssh to your Private EC2 instance in the same VPC, then the o
 
 NOTE:  At this point (2019-05-13) I had to disable DNSSEC on my freeIPA boxes to get the forwarding to work.  I don't have time to get this straightened out right now - but, in case someone actually comes across my repo here - I didn't want them to be as frustrated as I am/was.
 
-## Markdown examples
-
-> **_NOTE:_**  Here is a blockquote
-
-    **_NOTE:_**  Here is a "double tab"
-
 ## References
 [network_overview.md](network_overview.md)  
 [inventory.md](inventory.md)  
