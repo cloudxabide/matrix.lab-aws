@@ -96,9 +96,10 @@ Then see if you can ssh to your Private EC2 instance in the same VPC, then the o
   Click on "Transit Gateway Route Tables" and select your tgw  
   Click on Routes towards the bottom and click "Create Route"  
   Enter your CIDR and select your VPN TGW Attachment  
-  ![TGW Route Tables](Images/AWS-20-TGW-Route_Tables.png)  
+  ![TGW - Overview](Images/AWS-21-Transit_Gateway_Overview.png)  
 * Update your Public/Private Route Tables
   Click on each Route Table and "Edit Routes" and "Add Route" enter your on-prem CIDR and for the target, select your TGW and click "Save Routes"
+  ![TGW Route Tables](Images/AWS-20-TGW-Route_Tables.png)  
 
 
 ## On-premises Setup (Sophos)
