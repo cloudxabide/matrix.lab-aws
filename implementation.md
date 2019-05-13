@@ -38,6 +38,8 @@ See below for links to the references to see what my Toplogy is and what my subn
 
   Create Route Table - Private  
   ![Create Route Tables - Private](Images/AWS-08-Create_Route_Table-Private.png)  
+  Route Tables - Summary
+  ![Route Tables - Summary - Initial](Images/AWS-09-Route_Tables-Summary-Initial.png)  
 * Create Security Groups
   * Create Security Group for the "public hosts"  
     Click on "Security Groups" in the left-hand pane and click "Create security group" 
