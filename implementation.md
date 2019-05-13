@@ -49,16 +49,16 @@ See below for links to the references to see what my Toplogy is and what my subn
     (SELFNOTE:  Probably want to add ICMP?)  
   ![Security Groups - Summary](Images/AWS-10-Security_Groups_Summary.png)  
 * Create NAT Gateways (NGW)  
-  Click on "NAT Gateways" and "Create NAT Gateway".  Now - this is (possibly) counter-intuitive, but select your "public subnets".
-  Select a public subnet and click "Create New EIP" then "Create a NAT Gateway"
-  You should wait for a few minutes, but eventually you will see you have a Elastic IP Address, Private IP Address.
-* Create an EC2 instance in each subnet
-  be sure to select the correct Subnets and Security Groups
-  I will typically provide a name in the EC2 Instances summary screen as soon as I create the instance (like: EC2-AppA-Pub-10.0.0.0
-  ) otherwise, things can get confusing.  (IP Address should provide a good hint where the instance is though)
+  Click on "NAT Gateways" and "Create NAT Gateway".  Now - this is (possibly) counter-intuitive, but select your "public subnets".  
+  Select a public subnet and click "Create New EIP" then "Create a NAT Gateway"  
+  You should wait for a few minutes, but eventually you will see you have a Elastic IP Address, Private IP Address.  
   ![NGW Summary](Images/AWS-12-NGW-Summary.png)  
+* Create an EC2 instance in each subnet  
+  be sure to select the correct Subnets and Security Groups  
+  I will typically provide a name in the EC2 Instances summary screen as soon as I create the instance (like: EC2-AppA-Pub-10.0.0.0) otherwise, things can get confusing.  (IP Address should provide a good hint where the instance is though)  
+  ![EC2 Instances - Summary ](Images/AWS-14-EC2_instances-Summary.png)  
 * BREAK...
-Login to one of your Public EC2 instances... see if you can ssh to your other Public EC2 instance (first in the same VPC, then the other VPC).
+Login to one of your Public EC2 instances... see if you can ssh to your other Public EC2 instance (first in the same VPC, then the other VPC).  
 Then see if you can ssh to your Private EC2 instance in the same VPC, then the other VPC.  At this point, you will NOT be able to connect from one VPC to the other.
 
 * Create a Transit Gateway
