@@ -9,11 +9,11 @@ See below for links to the references to see what my Toplogy is and what my subn
   NOTE:  I usually do my demo work in us-east-1 (N. Virgina)  
   ![Console Login](Images/AWS-01-Console-Login.png)
 * Create 2 x VPCs   
-  Click Services and in text box "Find a service..." type "VPC" and select VPC
+  Click Services and in text box "Find a service..." type "VPC" and select VPC  
   Create VPC-AppA  
-  ![Create VPC-AppA](Images/AWS-02-Create_VPC-AppA.png)
+  ![Create VPC-AppA](Images/AWS-02-Create_VPC-AppA.png)  
   Create VPC-AppA  
-  ![Create VPC-AppB](Images/AWS-02-Create_VPC-AppB.png)
+  ![Create VPC-AppB](Images/AWS-02-Create_VPC-AppB.png)  
 * Create 4 subnets in each VPC (we will make 2 x public after they are created)  
   Click on Subnets in the left-hand panel and click Create Subnet  
   reference [network_overview.md](network_overview.md) for IP/subnet info  
