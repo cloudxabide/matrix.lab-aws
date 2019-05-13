@@ -36,16 +36,17 @@ See below for links to the references to see what my Toplogy is and what my subn
 
   Create Route Table - Private  
   ![Create Route Tables - Private](Images/AWS-08-Create_Route_Table-Private.png)  
-* Create Security Group for the "public hosts"
-  Click on "Security Groups" in the left-hand pane and click "Create security group" 
-  Once they are created, select each one and click "Inbound Rules" towards the bottom half.  Click Edit Rules and Add Rule.
-  Type: SSH, Source: Anywhere (you likely don't want this in production.
-  ![Create Security Groups](Images/AWS-10-Security_Groups_Summary.png)  
-* Create Security Group for the "private hosts"
-  Click on "Security Groups" in the left-hand pane and click "Create security group" 
-  Once they are created, select each one and click "Inbound Rules" towards the bottom half.  Click Edit Rules and Add Rule.
-  Type: SSH, Source: 10.0.0.0/8 
-  (SELFNOTE:  Probably want to add ICMP?)
+* Create Security Groups
+  * Create Security Group for the "public hosts"
+    Click on "Security Groups" in the left-hand pane and click "Create security group" 
+    Once they are created, select each one and click "Inbound Rules" towards the bottom half.  Click Edit Rules and Add Rule.
+    Type: SSH, Source: Anywhere (you likely don't want this in production.
+    ![Create Security Groups](Images/AWS-10-Security_Groups_Summary.png)  
+  * Create Security Group for the "private hosts"
+    Click on "Security Groups" in the left-hand pane and click "Create security group" 
+    Once they are created, select each one and click "Inbound Rules" towards the bottom half.  Click Edit Rules and Add Rule.
+    Type: SSH, Source: 10.0.0.0/8 
+    (SELFNOTE:  Probably want to add ICMP?)
 * Create NAT Gateways (NGW)
   Click on "NAT Gateways" and "Create NAT Gateway".  Now - this is (possibly) counter-intuitive, but select your "public subnets".
   Select a public subnet and click "Create New EIP" then "Create a NAT Gateway"
