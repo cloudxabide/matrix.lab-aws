@@ -18,7 +18,8 @@ See below for links to the references to see what my Toplogy is and what my subn
   Click on Subnets in the left-hand panel and click Create Subnet  
   reference [network_overview.md](network_overview.md) for IP/subnet info  
   NOTE:  I manually distribute my Subnets to different AZs to allow for an Network Load Balancer (NLB) later  
-  For the 2 x public Subnets, click the subnet and click Actions | Modify auto-assign IP settings.  Then click the check box for "Enable auto-assign public IPv4 address"
+  For the 2 x public Subnets, click the subnet and click Actions | Modify auto-assign IP settings.  Then click the check box for "Enable auto-assign public IPv4 address"  
+  ![Create Subnets](Images/AWS-05-Create_Subnet.png)
 * Create and Attach IGW to each VPC
   Click on Internet Gateways in the left-hand pane and click "Create Internet gateway"  
   Once you have created both IGWs, select each one at a time and click "Actions | Attach to VPC" and then attach them to the appropriate VPC
