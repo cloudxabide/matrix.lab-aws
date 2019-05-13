@@ -30,9 +30,10 @@ See below for links to the references to see what my Toplogy is and what my subn
   Click "Add route", Destination: 0.0.0.0/0, Target: (select Internet Gateway and chose the available IGW), click Save routes
   Then click "Subnet Assocations" in the lower half and "Edit subnet associations".  Select your 2 x public subnets and click Save  
   ![Create Route Tables - Public](Images/AWS-08-Create_Route_Table-Public.png)  
-  <HR>  
-  ![Create Route Tables - Private](Images/AWS-08-Create_Route_Table-Private.png)   
 
+  <HR>  
+
+  ![Create Route Tables - Private](Images/AWS-08-Create_Route_Table-Private.png)   
 * Create Security Group for the "public hosts"
   Click on "Security Groups" in the left-hand pane and click "Create security group" 
   Once they are created, select each one and click "Inbound Rules" towards the bottom half.  Click Edit Rules and Add Rule.
