@@ -56,7 +56,7 @@ See below for links to the references to see what my Toplogy is and what my subn
   be sure to select the correct Subnets and Security Groups
   I will typically provide a name in the EC2 Instances summary screen as soon as I create the instance (like: EC2-AppA-Pub-10.0.0.0
   ) otherwise, things can get confusing.  (IP Address should provide a good hint where the instance is though)
-
+  ![NGW Summary](Images/AWS-12-NGW-Summary.png)  
 * BREAK...
 Login to one of your Public EC2 instances... see if you can ssh to your other Public EC2 instance (first in the same VPC, then the other VPC).
 Then see if you can ssh to your Private EC2 instance in the same VPC, then the other VPC.  At this point, you will NOT be able to connect from one VPC to the other.
