@@ -87,11 +87,10 @@ Then see if you can ssh to your Private EC2 instance in the same VPC, then the o
   Click on "Site-to-Site VPN Connections" and select your VPN connection.
   Click on "Download Configuration" and seelct Vendor: Generic, Platform: Generic, Software: Vendor Agnostic and save the txt file.
 
-
-* Go do the Sophos stuff....
-  (I'll update this later - it's rather straight-forward though)
-  * Create IPsec Policy
-  * Create IPsec Objects (VPN)
+* Go do the Sophos stuff....  
+  (I'll update this later - it's rather straight-forward though)  
+  * Create IPsec Policy  
+  * Create IPsec Objects (VPN)  
 * Update Transit Gateway Route Tables to include on-prem  
   Click on "Transit Gateway Route Tables" and select your tgw  
   Click on Routes towards the bottom and click "Create Route"  
