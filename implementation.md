@@ -35,9 +35,7 @@ See below for links to the references to see what my Toplogy is and what my subn
   Then click "Subnet Assocations" in the lower half and "Edit subnet associations".  Select your 2 x public subnets and click Save  
   Create Route Table - Public  
   ![Create Route Tables - Public](Images/AWS-08-Create_Route_Table-Public.png)  
-
   <HR>  
-
   Create Route Table - Private  
   ![Create Route Tables - Private](Images/AWS-08-Create_Route_Table-Private.png)  
   Route Tables - Summary
