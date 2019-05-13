@@ -22,7 +22,8 @@ See below for links to the references to see what my Toplogy is and what my subn
   ![Create Subnets](Images/AWS-05-Create_Subnet.png)
 * Create and Attach IGW to each VPC
   Click on Internet Gateways in the left-hand pane and click "Create Internet gateway"  
-  Once you have created both IGWs, select each one at a time and click "Actions | Attach to VPC" and then attach them to the appropriate VPC
+  Once you have created both IGWs, select each one at a time and click "Actions | Attach to VPC" and then attach them to the appropriate VPC  
+  ![Create IGW](Images/AWS-06-Create-IGW.png)  
 * Create Route Tables and associate with Public Subnets
   Click on Route Tables in the left-hand pane and click Create route table.
   Once you have created the route tables, click on each and select "Routes" in the lower half of the window.  Click "Edit routes"
