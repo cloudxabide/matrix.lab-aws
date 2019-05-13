@@ -1,7 +1,11 @@
 # implementation.md
 
+## Status:
+This is very much still a Work In Progress (2019-05-13).  
+For the most part, it is whole - I need to still fill in some blanks however.
 
-## AWS 
+
+## AWS Resources
 See below for links to the references to see what my Toplogy is and what my subnets (CIDR) looks like.  
 
 * Login to your AWS console  
