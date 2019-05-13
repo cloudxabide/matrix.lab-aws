@@ -21,7 +21,7 @@ See below for links to the references to see what my Toplogy is and what my subn
   For the 2 x public Subnets, click the subnet and click Actions | Modify auto-assign IP settings.  Then click the check box for "Enable auto-assign public IPv4 address"  
   ![Create Subnets](Images/AWS-05-Create_Subnet.png)  
   Enable Public IP auto-assign for Subnet  
-  ![Create Subnets](Images/AWS-05-Subnets_Enable_PubPIP.png)  
+  ![Subnets - Enable Public IP Auto Assign](Images/AWS-05-Subnets_Enable_PubPIP.png)  
 * Create and Attach IGW to each VPC
   Click on Internet Gateways in the left-hand pane and click "Create Internet gateway"  
   Once you have created both IGWs, select each one at a time and click "Actions | Attach to VPC" and then attach them to the appropriate VPC  
