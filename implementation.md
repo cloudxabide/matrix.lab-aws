@@ -109,8 +109,9 @@ Then see if you can ssh to your Private EC2 instance in the same VPC, then the o
 
 
 ## Route 53 Resolver (Hybrid DNS)
-* Create Security Group allowing DNS queries (TCP/UDP) from 10.0.0.0/8 in VPC-AppA and VPC-AppB
-  ![route 53 resolver - VPC Assignment](Images/AWS-23-route53resolver-VPC_assignment.png)  
+* Create Security Group allowing DNS queries (TCP/UDP) from 10.0.0.0/8 in VPC-AppA and VPC-AppB  
+* Select AZs for your endpoints  
+  ![route 53 resolver - VPC Assignment](Images/AWS-23-route53resolver-AZ_assignment.png)  
   ![route 53 resolver - targets](Images/AWS-23-route53resolver-target.png)  
 
 ## Markdown examples
