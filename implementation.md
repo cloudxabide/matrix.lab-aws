@@ -65,10 +65,10 @@ See below for links to the references to see what my Toplogy is and what my subn
 Login to one of your Public EC2 instances... see if you can ssh to your other Public EC2 instance (first in the same VPC, then the other VPC).  
 Then see if you can ssh to your Private EC2 instance in the same VPC, then the other VPC.  At this point, you will NOT be able to connect from one VPC to the other.
 
-* Create a Transit Gateway
- Click on Transit Gateways and "Create Transit Gateway" - provide a Name tag and Description.
- I have been selecting "Auto accept shared attachments"
- Wait for it to change state
+* Create a Transit Gateway  
+ Click on Transit Gateways and "Create Transit Gateway" - provide a Name tag and Description.  
+ I have been selecting "Auto accept shared attachments"  
+ Wait for it to change state.  
 * Create Transit Gateway Attachments for each VPC
   Click on Transit Gateway Attachments and "Create Transit Gateway Attachment".
   Select the only Transit Gateway ID* that should be available
@@ -90,10 +90,11 @@ Then see if you can ssh to your Private EC2 instance in the same VPC, then the o
 
 * Go do the Sophos stuff....
 
-* Update Transit Gateway Route Tables to include on-prem
-  Click on "Transit Gateway Route Tables" and select your tgw
-  Click on Routes towards the bottom and click "Create Route"
-  Enter your CIDR and select your VPN TGW Attachment
+* Update Transit Gateway Route Tables to include on-prem  
+  Click on "Transit Gateway Route Tables" and select your tgw  
+  Click on Routes towards the bottom and click "Create Route"  
+  Enter your CIDR and select your VPN TGW Attachment  
+  ![TGW Route Tables](Images/AWS-20-TGW-Route_Tables.png)  
 * Update your Public/Private Route Tables
   Click on each Route Table and "Edit Routes" and "Add Route" enter your on-prem CIDR and for the target, select your TGW and click "Save Routes"
 
