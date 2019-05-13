@@ -7,6 +7,7 @@ See below for links to the references to see what my Toplogy is and what my subn
 * Login to your AWS console  
   Browse to https://\<Account Id:\>.signin.aws.amazon.com/console  
   NOTE:  I usually do my demo work in us-east-1 (N. Virgina)  
+  ![Console Login](Images/AWS-01-Console-Login.png)
 * Create 2 x VPCs   
   Click Services and in text box "Find a service..." type "VPC" and select VPC
 
@@ -78,11 +79,14 @@ Then see if you can ssh to your Private EC2 instance in the same VPC, then the o
   Click on each Route Table and "Edit Routes" and "Add Route" enter your on-prem CIDR and for the target, select your TGW and click "Save Routes"
 
 
-## On-premises Sophos Setup
+## On-premises Setup (Sophos)
 
 
 ## Testing
 
+
+## Route 53 Resolver (Hybrid DNS)
+* Create Security Group allowing DNS queries (TCP/UDP) from 10.0.0.0/8 in VPC-AppA and VPC-AppB
 
 
 ## Markdown examples
