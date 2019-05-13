@@ -91,6 +91,7 @@ Then see if you can ssh to your Private EC2 instance in the same VPC, then the o
   (I'll update this later - it's rather straight-forward though)  
   * Create IPsec Policy  
   * Create IPsec Objects (VPN)  
+
 * Update Transit Gateway Route Tables to include on-prem  
   Click on "Transit Gateway Route Tables" and select your tgw  
   Click on Routes towards the bottom and click "Create Route"  
