@@ -48,7 +48,7 @@ See below for links to the references to see what my Toplogy is and what my subn
     Type: SSH, Source: 10.0.0.0/8   
     (SELFNOTE:  Probably want to add ICMP?)  
   ![Security Groups - Summary](Images/AWS-10-Security_Groups_Summary.png)  
-* Create NAT Gateways (NGW)
+* Create NAT Gateways (NGW)  
   Click on "NAT Gateways" and "Create NAT Gateway".  Now - this is (possibly) counter-intuitive, but select your "public subnets".
   Select a public subnet and click "Create New EIP" then "Create a NAT Gateway"
   You should wait for a few minutes, but eventually you will see you have a Elastic IP Address, Private IP Address.
