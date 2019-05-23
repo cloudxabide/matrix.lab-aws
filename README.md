@@ -1,19 +1,18 @@
 # matrix.lab
-My Home Lab used for testing Hybrid Cloud  
+My Home Lab used for testing Hybrid Cloud and AWS ALZ (soon to be AWS Control Tower)
 Version: 2019-05-10
 
 ## Overview
 This repo chronicles the deployment of a Hybrid Cloud consisting of AWS and an on-premises Open Source cloud (based on community Red Hat bits)  
 ### The Environments
 * AWS Environment 
-  * single-account 
+  * multi-account (I will deploy Automated Landing Zone (ALZ) in AWS for this test)
   * multi-VPC 
   * Transit Gateway
   * Site-to-Site VPN
-  * 2 x Public Subnets (per VPC)
-  * 2 x Private Subnets (per VPC)
   * Several EC2 instances (to test connectivity)
-  * route 53 resolver (hybrid DNS, conditional forwarding)
+  * route 53 resolver (hybrid DNS, conditional forwarding, in the Shared Services VPC)
+  * Vended Accounts:  cxa-dev, cxa-prod, cxa-test
 
 * Homelab Environment
   * Sophos XG85
@@ -26,6 +25,7 @@ This repo chronicles the deployment of a Hybrid Cloud consisting of AWS and an o
 
 ## Layout
 ![Hybrid-Single_Account.png](Images/Hybrid-Single_Account.png)
+![Hybrid-Multi_Account.png](Images/Hybrid-Multi_Account.png)
 
 ## Implementation - The Steps
 You should be able to follow the following implementation guide and have an operational "hybrid cloud" setup once done.  
