@@ -34,4 +34,4 @@ You should be able to follow the following implementation guide and have an oper
 ## NOTES
 This is not easy, but it *is* straight-forward.  
 This repo does NOT provide an in-depth review of the core functionality/services that are being utilized.  (i.e. you have to know why an Internet Gateway is used in some cases, and a NAT Gateway, in others - if you really want to know what is going on here).  
-That said - I am assuming you know how to deploy an EC2 instance and created SSH keys in the regions you plan to use.  
+That said - I am assuming you know how to deploy an EC2 instance and have created SSH keys in the regions you plan to use.  
