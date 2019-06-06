@@ -54,7 +54,7 @@ See below for links to the references to see what my Toplogy is and what my subn
     Click on "Security Groups" in the left-hand pane and click "Create security group"  
     Once they are created, select each one and click "Inbound Rules" towards the bottom half.  Click Edit Rules and Add Rule.  
     Type: SSH, Source: 10.0.0.0/8   
-    (SELFNOTE:  Probably want to add ICMP?)  
+    (FNOTE:  I will add ICMP for testing)  
   ![Security Groups - Summary](Images/AWS-10-Security_Groups_Summary.png)  
 * Create NAT Gateways (NGW)  
   Click on "NAT Gateways" and "Create NAT Gateway".  Now - this is (possibly) counter-intuitive, but select your "public subnets".  
@@ -84,7 +84,7 @@ Then see if you can ssh to your Private EC2 instance in the same VPC, then the o
   Attachment type: VPN  
   Customer Gateway: New   
   IP Address: (public IP of your VPN endpoint (Customer Gateway)  
-  I have selected "static" for Routing Options (need to double-check that this is optimal, even if it works this way)  
+  I have selected "static" for Routing Options (need to double-check that this is optimal, even if it works this way - if *I* attempt to use BGP, the reporting of the connection is inaccurate and routing will not work - it is a limitation of my ability to manage/configure my Sophos... and... for as often I am updating my firewall, I'd rather not be messing with BGP))  
   Click "Create attachment" and wait for it to change state to "available" (probably 5 minutes?) - I use this time to "name" my attachment.  
   NOTE:  This step will create a "Site-to-Site VPN Connection" as well as a "Customer Gateway"  
 * Download the VPN Configuration  
@@ -126,4 +126,6 @@ NOTE:  At this point (2019-05-13) I had to disable DNSSEC on my freeIPA boxes to
 [inventory.md](inventory.md)  
 
 
-
+```
+aws organizations list-accounts --query 'Accounts[*].[Id, Email]' --output text
+```
