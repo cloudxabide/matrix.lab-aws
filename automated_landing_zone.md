@@ -48,3 +48,12 @@ aws cloudformation create-stack --stack-name "${LANDINGZONENAME}" \
 ### WITHOUT VARS Substitution
 aws cloudformation create-stack --stack-name "LZ0606"   --template-url https://s3.amazonaws.com/solutions-reference/aws-landing-zone/latest/aws-landing-zone-initiation.template   --parameters file:"//`pwd`/params-LZ0606-us-east-1.json"   --region us-east-1 --capabilities CAPABILITY_NAMED_IAM 
 ```
+
+## Add the Networking (core) account
+I created a separate doc to [Update ALZ to Add Networking account](update_alz_add_networking.md)
+
+## Enable Service Catalog - Account Vending Machine
+The Account Vending Machine (AVM) is the paydirt of the ALZ solution.  It provides a mechanism to "vend" accounts under an AWS Organizations OU (applications) which is baselined and has a limited number of "pre-canned" network configurations.  It should provide the basis for *most* folks to get their work done.
+
+### Add role to Portfolio.
+Side NOTE:  I thought most customers will likely create another (core) account to vend accounts with so they don't have to use a master account.  I don't know if a "non-master" account can vend though.  So, perhaps they would have to create an IAM user specific for managing the Account Vending.  Hmm...
