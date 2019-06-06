@@ -22,7 +22,7 @@ email accounts I use:
 ```
 
 ### Networking
-Shared Services VPCcidr - the ALZ will create a VPC for the Shared Services account to allow services to run which require a VPC.
+Shared Services VPCcidr - the ALZ will create a VPC for the Shared Services account to allow services to run which require a VPC.  
 Number of AZs for Shared-Services 
 
 ### Example Parameters file (params-LZ000-v2.1.0-us-east-1.cfn)
