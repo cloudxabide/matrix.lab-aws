@@ -27,8 +27,9 @@ This repo chronicles the deployment of a Hybrid Cloud consisting of AWS and an o
 ![Hybrid Cloud - Homelab - Automated Landing Zone](Hybrid_Cloud-Homelab-Automated_Landing_Zone.png)
 
 ## Implementation - The Steps
+- [Prerequisites](prerequisites.md)
 - [Deploy Automated Landing Zone](automated_landing_zone.md)  
-  - add networking (core) account
+  - [add networking (core) account](update_alz_add_networking.md)
 - [Configure Hybrid Connectivity](transit_gateway-VPN.md)  
  - using VPN to TGW  
  - Sophos XG85 Firewall  
