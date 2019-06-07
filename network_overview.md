@@ -2,15 +2,11 @@
 
 
 ## Subnet Layout
-Name               | Environment 1 |                          | Environment 2 |  |
+Name               | Ingress       |                          | Egress        |  |
 :------------------|:-------------:|:------------------------:|:------------  |:------------------------:|
-VPC                | VPC-AppA      |                          | VPC-AppB      | |
-VPCCidr            | 10.0.0.0/16   |                          | 10.1.0.0/16   | |
-PublicSubnet0CIDR  | 10.0.0.0/24   | Subnet-AppA-pub-10.0.0.0 | 10.1.0.0/24   | Subnet-AppB-pub-10.1.0.0 
-PublicSubnet1CIDR  | 10.0.1.0/24   | Subnet-AppA-pub-10.0.1.0 | 10.1.1.0/24   | Subnet-AppB-pub-10.1.1.0 
-PublicSubnet1CIDR  | 10.0.1.0/24   | 10.1.1.0/24 
-PrivateSubnet0CIDR | 10.0.2.0/24   | 10.1.2.0/24 
-PrivateSubnet1CIDR | 10.0.3.0/24   | 10.1.3.0/24 
+VPC                | VPC-ingress    |                           | VPC-egress   | |
+VPCCidr            | 10.64.200.0/16   |                           | 10.1.0.0/16   | |
+Sub-Pub-01         | 10.64.200.0/24   | Subnet-AppA-pub-10.64.0.0 | 10.1.0.0/24   | Subnet-AppB-pub-10.1.0.0 
 
 ## Internet Gateway
 IGW-AppA

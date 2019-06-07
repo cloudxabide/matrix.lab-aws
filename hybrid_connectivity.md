@@ -21,7 +21,7 @@ See below for links to the references to see what my Toplogy is and what my subn
   ![Create VPC-ingress](Images/AWS-02-Create_VPC-ingress.png)  
   Create VPC-egress
   ![Create VPC-egress](Images/AWS-02-Create_VPC-egress.png)  
-* Create 4 subnets in each VPC (we will make 2 x public after they are created)  
+* Create 4 subnets in each VPC (ensure each subnet is in a different AZ)
   Click on Subnets in the left-hand panel and click Create Subnet  
   reference [network_overview.md](network_overview.md) for IP/subnet info  
   NOTE:  I manually distribute my Subnets to different AZs to allow for an Network Load Balancer (NLB) later  
@@ -43,7 +43,7 @@ See below for links to the references to see what my Toplogy is and what my subn
   Then click "Subnet Assocations" in the lower half and "Edit subnet associations".  Select your 2 x Subnets and click Save  
 
 * Create Security Groups  
-  * Create Security Group for the "public hosts"  
+  * Create Security Group for the Ingress VPC
     Click on "Security Groups" in the left-hand pane and click "Create security group" 
     Once they are created, select each one and click "Inbound Rules" towards the bottom half.  Click Edit Rules and Add Rule.
     Type: SSH, Source: Anywhere (you likely don't want this in production.  
