@@ -49,6 +49,12 @@ aws cloudformation create-stack --stack-name "${LANDINGZONENAME}" \
 aws cloudformation create-stack --stack-name "LZ0606"   --template-url https://s3.amazonaws.com/solutions-reference/aws-landing-zone/latest/aws-landing-zone-initiation.template   --parameters file:"//`pwd`/params-LZ0606-us-east-1.json"   --region us-east-1 --capabilities CAPABILITY_NAMED_IAM 
 ```
 
+### NOTES:
+The time for the ALZ solution to deploy will vary.  Today, for example, my AVM CodePipeline executed as follows:  
+Start time: Jun 6, 2019 3:49 PM  
+End time: Jun 6, 2019 4:21 PM  
+
+
 ## Add the Networking (core) account
 I created a separate doc to [Update ALZ to Add Networking account](update_alz_add_networking.md)
 

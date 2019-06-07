@@ -1,5 +1,6 @@
 # matrix.lab
-My Home Lab used for testing Hybrid Cloud and AWS ALZ (soon to be AWS Control Tower)
+Matrix.lab is my home Lab used for testing Hybrid Cloud with AWS and the AWS Automated Landing Zone (ALZ).
+
 Version: 2019-05-10
 
 ## Overview
@@ -24,7 +25,9 @@ This repo chronicles the deployment of a Hybrid Cloud consisting of AWS and an o
   * fairly standard Commodity Off The Shelf (COTS) hardware
 
 ## Layout
-![Hybrid Cloud - Homelab - Automated Landing Zone](Images/Hybrid_Cloud-Homelab-Automated_Landing_Zone.png)
+![Hybrid Cloud - Homelab - Automated Landing Zone](Images/Hybrid_Cloud-Homelab-Automated_Landing_Zone.png)  
+![Hybrid Cloud - DNS](Images/Hybrid_Cloud-Homelab-Automated_Landing_Zone-DNS.png)
+
 
 ## Implementation - The Steps
 - [Prerequisites](prerequisites.md)
@@ -35,8 +38,6 @@ This repo chronicles the deployment of a Hybrid Cloud consisting of AWS and an o
  - Sophos XG85 Firewall  
 - [Share Transit Gateway to existing Accounts](resource_share-TGW.md)  
 
-You should be able to follow the following implementation guide and have an operational "hybrid cloud" setup once done.  
-[implementation.md](implementation.md)
 
 ## NOTES
 This is not (necessarilly) easy, but it *is* straight-forward.  
