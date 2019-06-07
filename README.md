@@ -35,7 +35,7 @@ This repo chronicles the deployment of a Hybrid Cloud consisting of AWS and an o
 - [Prerequisites](prerequisites.md)
 - [Deploy Automated Landing Zone](automated_landing_zone.md)  
   - [add networking (core) account](update_alz_add_networking.md)
-- [Configure Hybrid Connectivity](transit_gateway-VPN.md)  
+- [Configure Hybrid Connectivity](hybrid_connectivity.md)
  - using VPN to TGW  
  - Sophos XG85 Firewall  
 - [Share Transit Gateway to existing Accounts](resource_share-TGW.md)  
