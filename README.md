@@ -25,7 +25,9 @@ This repo chronicles the deployment of a Hybrid Cloud consisting of AWS and an o
   * fairly standard Commodity Off The Shelf (COTS) hardware
 
 ## Layout
+### Automated Landing Zone - Overview
 ![Hybrid Cloud - Homelab - Automated Landing Zone](Images/Hybrid_Cloud-Homelab-Automated_Landing_Zone.png)  
+### Hybrid DNS - Overview
 ![Hybrid Cloud - DNS](Images/Hybrid_Cloud-Homelab-Automated_Landing_Zone-DNS.png)
 
 
