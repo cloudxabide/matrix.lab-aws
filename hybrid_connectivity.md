@@ -35,18 +35,13 @@ See below for links to the references to see what my Toplogy is and what my subn
   Click on Internet Gateways in the left-hand pane and click "Create Internet gateway"  
   Once you have created both IGWs, select each one at a time and click "Actions | Attach to VPC" and then attach them to the appropriate VPC  
   ![Create IGW](Images/AWS-06-Create-IGW.png)  
-* Create Route Tables and associate with Public Subnets  
-  Click on Route Tables in the left-hand pane and click Create route table.  
-  Once you have created the route tables, click on each and select "Routes" in the lower half of the window.  Click "Edit routes"  
+* Update Route Tables and associate with Subnets  
+  Click on Route Tables in the left-hand pane - rename the Route Tables to match the VPC (field on the right)
+  Once you have renamed the route tables, click on each and select "Routes" in the lower half of the window.  Click "Edit routes"  
+  ![Rename Route Tables](Images/AWS-05-route_table-rename.png)  
   Click "Add route", Destination: 0.0.0.0/0, Target: (select Internet Gateway and chose the available IGW), click Save routes  
-  Then click "Subnet Assocations" in the lower half and "Edit subnet associations".  Select your 2 x public subnets and click Save  
-  Create Route Table - Public  
-  ![Create Route Tables - Public](Images/AWS-08-Create_Route_Table-Public.png)  
+  Then click "Subnet Assocations" in the lower half and "Edit subnet associations".  Select your 2 x Subnets and click Save  
 
-  Create Route Table - Private  
-  ![Create Route Tables - Private](Images/AWS-08-Create_Route_Table-Private.png)  
-  Route Tables - Summary   
-  ![Route Tables - Summary - Initial](Images/AWS-09-Route_Tables-Summary-Initial.png)  
 * Create Security Groups  
   * Create Security Group for the "public hosts"  
     Click on "Security Groups" in the left-hand pane and click "Create security group" 
