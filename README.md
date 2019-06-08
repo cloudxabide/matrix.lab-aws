@@ -39,6 +39,8 @@ This repo chronicles the deployment of a Hybrid Cloud consisting of AWS and an o
   - using VPN to TGW  
   - Sophos XG85 Firewall  
 - [Share Transit Gateway to existing Accounts](resource_share-TGW.md)  
+- [Configure route53 resolver](route53resolver.md)
+
 
 
 ## NOTES
