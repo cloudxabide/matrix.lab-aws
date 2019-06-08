@@ -8,7 +8,38 @@ I have opted to do this in my "Networking" account.
 Browse to VPC | Security Groups
 Create Security Group (NAME:  SG-ingress-DNS)
 
-Browse Services | Route 53
+Browse Services | Route 53 Resolver | Inbound Endpoints
+Create Inbound Endpoint
+  - Endpoint name: EP-ingress-dns-inbound
+  - VPC in the Region: (select the ingress VPC)
+  - Security group for this endpoint: SG-ingress-DNS (from above)
+Complete the 2 sections for IP address #1 and #2
+(You will need to retrieve the IPs to enter in to IPA)
+
+Create Outbound Endpoint
+(repeat the process for Inbound)
+  - Endpoint name:  EP-ingress-outbound
+
+Create Rules
+  - Name: R53-rule-matrix_lab
+  - Rule Type: Forward
+  - Domain name: matrix.lab
+  - VPCs that use this rule: (select them all?)
+  - Outbound endpoint: (select the resolver rule that we just created EP-ingress-dns-outbound)
+  - Target IP address:  10.10.10.121 10.10.10.122 
+
+Now.. this is VERY important - you will (likely) need to allow queries from your AWS subnets
+```
+kinit admin
+ipa dnszone-mod --allow-transfer='192.168.0.0/24;10.10.10.0/24;127.0.0.1/32;10.0.0.0/8' matrix.lab.
+```
+
+## Testing
+```
+yum whatprovides */nslookup | egrep -v 'Repo|Filename|Matched' | sort
+yum -y install bind-utils
+```
+
 
 ## References
 https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html

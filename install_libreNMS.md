@@ -123,5 +123,10 @@ chown -R librenms:librenms /opt/librenms
 setfacl -d -m g::rwx /opt/librenms/rrd /opt/librenms/logs /opt/librenms/bootstrap/cache/ /opt/librenms/storage/
 setfacl -R -m g::rwx /opt/librenms/rrd /opt/librenms/logs /opt/librenms/bootstrap/cache/ /opt/librenms/storage/
 
+## Testing
+```
+yum -y install net-snmp net-snmp-utils
+snmpwalk -v2c -c publicRO 10.10.10.1
+```
 
-libr3nmsPassw0rd
+libr3nmsP...
