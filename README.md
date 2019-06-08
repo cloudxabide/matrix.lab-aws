@@ -40,10 +40,10 @@ This repo chronicles the deployment of a Hybrid Cloud consisting of AWS and an o
   - Sophos XG85 Firewall  
 - [Share Transit Gateway to existing Accounts](resource_share-TGW.md)  
 - [Configure route53 resolver](route53resolver.md)
-
+- [install libreNMS](install_libreNMS.md)
 
 
 ## NOTES
 This is not (necessarilly) easy, but it *is* straight-forward.  
 This repo does NOT provide an in-depth review of the core functionality/services that are being utilized.  (i.e. you have to know why an Internet Gateway is used in some cases, and a NAT Gateway, in others - if you really want to know what is going on here).  
-That said - I am assuming you know how to deploy an EC2 instance and have created SSH keys in the regions you plan to use.  
+That said: I am assuming you know how to deploy an EC2 instance and have created SSH keys in the regions you plan to use.  
