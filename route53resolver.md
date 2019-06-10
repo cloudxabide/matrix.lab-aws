@@ -34,6 +34,13 @@ kinit admin
 ipa dnszone-mod --allow-transfer='192.168.0.0/24;10.10.10.0/24;127.0.0.1/32;10.0.0.0/8' matrix.lab.
 ```
 
+If you opt to use Microsoft AD and later wish to have an AD trust between IPA and your Active Directory controller, do the following on your IPA system(s).
+```
+for PORT in 80 88 443 389 636 88 464 53 138 139 445; do firewall-cmd --permanent --add-port=${PORT}/tcp; done
+for PORT in 88 464 53 123 138 139 445; do firewall-cmd --permanent --add-port=${PORT}/udp; done
+firewall-cmd --reload
+```
+
 ## Testing
 ```
 yum whatprovides */nslookup | egrep -v 'Repo|Filename|Matched' | sort
