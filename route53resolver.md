@@ -40,6 +40,13 @@ for PORT in 80 88 443 389 636 88 464 53 138 139 445; do firewall-cmd --permanent
 for PORT in 88 464 53 123 138 139 445; do firewall-cmd --permanent --add-port=${PORT}/udp; done
 firewall-cmd --reload
 ```
+## Sharing
+You will need to share the hybrid-DNS solution to the other accounts.
+
+Access the console using the Networking account.  Browse to the Resource Access Manager and click "Create Resource Share"
+Under Resources select "Resolver Rules" and select the one for your own on-prem domain.
+Add Principals to allow (which, should essentially be ALL of them)
+
 
 ## Testing
 ```
