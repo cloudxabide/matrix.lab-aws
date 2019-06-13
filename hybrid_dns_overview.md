@@ -11,8 +11,8 @@ So - for my example hybrid cloud I have an on-prem environment (legacy) and my n
 I use several Top-Level Domains for public access (as well as on-prem) and tertiary domains for testing
 
 
-domain                   | location  | DNS provider   | purpose
-:------------------------|:---  -----:|:-------|
+domain                   | location   | DNS provider   | purpose
+:------------------------|:----------:|:---------------|:------
 cloudXabide.com          | N/A        | route 53       | Parent domain for public presence 
 awscloud.cloudXabide.com | AWS cloud  | route 53       | Provide DNS resolution for publicly accessible AWS cloud end-points
 linuxrevolution.com      | Homelab    | route 53       | Parent domain for publicly accessible on-prem end-points
