@@ -2,6 +2,12 @@
 
 
 ```
+yum -y install git
+cd /var/www/html
+git clone https://github.com/cloudxabide/matrix.lab
+ln -s matrix.lab linuxrevolution.com
+
+```
 cat << EOF > /etc/httpd/conf.d/www.linuxrevolution.com.conf
 
 <VirtualHost *:80>
