@@ -10,13 +10,13 @@ So - for my example hybrid cloud I have an on-prem environment (legacy) and my n
 
 I use several Top-Level Domains for public access (as well as on-prem) and tertiary domains for testing
 
-domain                   | location   | DNS provider   | purpose
-:------------------------|:----------:|:---------------|:------
-cloudXabide.com          | N/A        | route 53       | Parent domain for public presence 
-awscloud.cloudXabide.com | AWS cloud  | route 53       | Provide DNS resolution for publicly accessible AWS cloud end-points
-linuxrevolution.com      | Homelab    | route 53       | Parent domain for publicly accessible on-prem end-points
-matrix.lab               | Homelab    | freeIPA        | Parent domain for Homelab resources (internal only)
-CORP.matrix.lab          | Homelab    | Windows AD     | Domain for Homelab Windows Domain resources (internal only)
+domain                   | Public or Private | location   | DNS provider   | purpose
+:------------------------|:-----------------:|:-----------|:---------------|:---------
+cloudXabide.com          | Public            | N/A        | route 53       | Parent domain for public presence 
+awscloud.cloudXabide.com | Public            | AWS cloud  | route 53       | Provide DNS resolution for publicly accessible AWS cloud end-points
+linuxrevolution.com      | Public            | Homelab    | route 53       | Parent domain for publicly accessible on-prem end-points
+matrix.lab               | Private           | Homelab    | freeIPA        | Parent domain for Homelab resources (internal only)
+CORP.matrix.lab          | Private           | Homelab    | Windows AD     | Domain for Homelab Windows Domain resources (internal only)
 
 ## cloudXabide.com
 Domain I use for public testing 
