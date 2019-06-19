@@ -90,7 +90,7 @@ Then see if you can ssh to your Private EC2 instance in the same VPC, then the o
   Click on "Download Configuration" and seelct Vendor: Generic, Platform: Generic, Software: Vendor Agnostic and save the txt file.  
 
 * Go do the Sophos stuff....  
-  Please review [Sopos Setup](#on-premises-setup-sophos)  
+  Please review [Sophos Setup](#on-premises-setup-sophos)  
 
 * Update Transit Gateway Route Tables to include on-prem  
   Click on "Transit Gateway Route Tables" and select your tgw  
