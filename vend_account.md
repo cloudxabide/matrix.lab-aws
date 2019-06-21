@@ -45,8 +45,14 @@ Select the available VPC and subnets
 
 ### Create Route Table
 You will need to wait for the TGW Attachment to complete before proceeding
-Find "Transit Gateway Route Tables" in the left-hand pane, lower section
-CLick "Create Transit Gateway Route Table"
+Click on Route Tables (left-hand pane) and select each of the existing Route Tables, then Routes
+Add 10.64.0.0/16 and make the Target your TGW
+
+DISCLAIMER - this... is a bummer.  If the subnet you are about to attach to is NOT within the original VPC CIDR  
+VPCcidr (ALZ):  10.64.0.0/16  
+VPCcidr (App03):  10.108.0.0/22
+you need to ALSO update the Route Table(s) for the VPCs you want to be able to communicate with.  THEREFORE, it is very important that you architect your network space correctly up-front.
+
 
 
 
