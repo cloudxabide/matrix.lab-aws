@@ -51,8 +51,8 @@ You will need to wait for the TGW Attachment to complete before proceeding
 Click on Route Tables (left-hand pane) and select each of the existing Route Tables, then Routes
 Add 10.64.0.0/16 and make the Target your TGW
 
-[Networking Account - Route Table](Images/AWS-RouteTable-NetworkingAccount.png)  
-[VendedAccount - Route Table](Images/AWS-RouteTable-VendedAccount.png)  
+![Networking Account - Route Table](Images/AWS-RouteTable-NetworkingAccount.png)  
+![VendedAccount - Route Table](Images/AWS-RouteTable-VendedAccount.png)  
 
 DISCLAIMER - this... is a bummer.  If the subnet you are about to attach to is NOT within the original VPC CIDR  
 VPCcidr (ALZ):  10.64.0.0/16  

@@ -19,17 +19,16 @@ This repo chronicles the deployment of a Hybrid Cloud consisting of AWS and an o
   * Sophos XG85
   * Cisco SG300-28 Managed Switch
   * CentOS 7.6 (at the time of writing this)
-  * oVirt (Community version Red Hat Virtualization)
   * okd (Essentially the community version of Red Hat OpenShift)
   * [libreNMS](https://www.librenms.org/) 
-  * fairly standard Commodity Off The Shelf (COTS) hardware
+  * oVirt (Community version Red Hat Virtualization)
+  * fairly standard Commodity Off The Shelf (COTS) hardware (Intel NUCs, Asus builds, HPe ML-30s)  
 
 ## Layout
 ### Automated Landing Zone - Overview
 ![Hybrid Cloud - Homelab - Automated Landing Zone](Images/Hybrid_Cloud-Homelab-Automated_Landing_Zone.png)  
 ### Hybrid DNS - Overview
 ![Hybrid Cloud - DNS](Images/Hybrid_Cloud-Homelab-Automated_Landing_Zone-DNS.png)
-
 
 ## Implementation - The Steps
 - [Prerequisites](prerequisites.md)
