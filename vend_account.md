@@ -59,6 +59,54 @@ VPCcidr (ALZ):  10.64.0.0/16
 VPCcidr (App03):  10.108.0.0/22
 you need to ALSO update the Route Table(s) for the VPCs you want to be able to communicate with.  THEREFORE, it is very important that you architect your network space correctly up-front.
 
+```
+[ec2-user@ip-10-64-108-243 ~]$ ping -c 1 10.64.200.198; nslookup co7-ipa-srv01.matrix.lab
+PING 10.64.200.198 (10.64.200.198) 56(84) bytes of data.
+64 bytes from 10.64.200.198: icmp_seq=1 ttl=63 time=2.43 ms
+
+--- 10.64.200.198 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 2.430/2.430/2.430/0.000 ms
+Server:        10.64.108.2
+Address:    10.64.108.2#53
+
+** server can't find co7-ipa-srv01.matrix.lab: NXDOMAIN
+```
+
+### Share Route 53 Resolver Rule
+Login to the console which has your route 53 resolver rules for your on-prem domains and browse Services for Resource Access Manager.
+Create a Resource Share
+Provide a Name and select Resolver Rules under Resources - optional | Select resource type
+Under Principals, add your Vended Account Number
+Login in to the console for your Vended Account and Browse to Resource Access Manager | Shared with me | Resource Shares
+Click the Resolver Share and "Accept Resource Share", then OK
+You then need to browse to Route 53 | Rules | (the shared Resolver Rule)
+Click Associate VPC and select your VPC
+
+And now... everything is working for AWS VPCs and on-prem Subnet(s)
+```
+[ec2-user@ip-10-64-108-243 ~]$ ping -c 1 10.64.200.198; ping -c 1 10.10.10.121; nslookup co7-ipa-srv01.matrix.lab
+PING 10.64.200.198 (10.64.200.198) 56(84) bytes of data.
+64 bytes from 10.64.200.198: icmp_seq=1 ttl=63 time=2.22 ms
+
+--- 10.64.200.198 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 2.222/2.222/2.222/0.000 ms
+PING 10.10.10.121 (10.10.10.121) 56(84) bytes of data.
+64 bytes from 10.10.10.121: icmp_seq=1 ttl=62 time=46.3 ms
+
+--- 10.10.10.121 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 46.325/46.325/46.325/0.000 ms
+Server:        10.64.108.2
+Address:    10.64.108.2#53
+
+Non-authoritative answer:
+Name:    co7-ipa-srv01.matrix.lab
+Address: 10.10.10.121
+```
+
+
 
 
 
