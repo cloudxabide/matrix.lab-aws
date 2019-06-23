@@ -102,9 +102,11 @@ for VHOST in linuxrevolution.com www.linuxrevolution.com plex.linuxrevolution.co
 do 
   echo "/var/www/html/${VHOST}/" | ./certbot-auto certonly -d ${VHOST} --webroot
 done
+```
 
 ## Web content
 So, while the redirect *should* occur via the vhost file, I create this as well...
+
 ```
 cat << EOF > /var/www/html/plex.linuxrevolution.com/index.html
 <HTML><HEAD><TITLE> LinuxRevolution | Plex y'all | &#169 2019</TITLE>
