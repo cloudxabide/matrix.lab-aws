@@ -39,3 +39,6 @@ https://aws.amazon.com/blogs/networking-and-content-delivery/centralized-dns-man
 ### How to centralize DNS management in a multi-account environment
 Older doc - route 53 resolver is probably a better approach.
 https://aws.amazon.com/blogs/security/how-to-centralize-dns-management-in-a-multi-account-environment/
+
+## AWS and ADFS - Federated Logins
+https://aws.amazon.com/blogs/security/aws-federated-authentication-with-active-directory-federation-services-ad-fs/
