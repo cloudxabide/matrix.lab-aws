@@ -12,7 +12,7 @@ Configure route 53 resolver | Done | 1 | | Shared Services Account, for matrix.l
 Configure windows AD (in AWS) | Done | | | Shared Services
 Configure route 53 resolver | Done | 1 | | Shared Services Account, for corp.matrix.lab
 Vend an account | Done | .25 | | App0# account was created and "plumbed up" to the environment
-Configure ADFS | not started | | |
+Configure ADFS | not started | 2 | [Enabling Federation to AWS...](https://aws.amazon.com/blogs/security/enabling-federation-to-aws-using-windows-active-directory-adfs-and-saml-2-0/) |
 | | | |
 | | | |
 Configure OKD | Not Started | | |
