@@ -26,7 +26,7 @@ sed -i -e 's/memory_limit = 128M/;memory_limit = 128M\nmemory_limit = 512M/g' /e
 ```
 for VHOST in linuxrevolution.com www.linuxrevolution.com plex.linuxrevolution.com music.linuxrevolution.com
 do 
-mkdir -p /var/www/html/${VHOST}
+# Non-SSL vhost files
 cat << EOF > /etc/httpd/conf.d/${VHOST}.conf
 <VirtualHost *:80>
 ServerAdmin webadmin@${VHOST}
@@ -37,55 +37,33 @@ ErrorLog /var/log/httpd/${VHOST}_error.log
 CustomLog /var/log/httpd/${VHOST}_access.log combined
 </VirtualHost>
 EOF
-done
 
-chown -R apache:apache /var/www/html/
-find /var/www/html/ -type f -exec sudo chmod 0644 {} \;
-find /var/www/html/ -type d -exec sudo chmod 0775 {} \;
-restorecon -RFvv /var/www/html
-```
-
-## Safety Nets (fail2ban)
-```
-[morpheus@slippy ~]$ cat build_web_server.md 
-# Building a Web Server (and bastion)
-
-## Overview
-I am going to build a vhost'ing Apache server and SSH bastion
-
-## Install and Configure the LAMP 
-Assuming you're doing this on CentOS (else you need to add subscription)  
-
-```
-
-id -u morpheus &>/dev/null || useradd -u1000 -G10 -c "James Radtke" -p '$6$MIxbq9WNh2oCmaqT$10PxCiJVStBELFM.AKTV3RqRUmqGryrpIStH5wl6YNpAtaQw.Nc/lkk0FT9RdnKlEJEuB81af6GWoBnPFKqIh.' morpheus
-usermod -a -G apache morpheus
-
-yum -y update
-yum -y install httpd php php-pear mariadb php-mysql
-
-
-firewall-cmd --permanent --add-service=http
-firewall-cmd --permanent --add-service=https
-firewall-cmd --reload
-sed -i -e 's/memory_limit = 128M/;memory_limit = 128M\nmemory_limit = 512M/g' /etc/php.ini
-```
-
-## Create vhost(s) config files
-```
-for VHOST in linuxrevolution.com www.linuxrevolution.com plex.linuxrevolution.com music.linuxrevolution.com
-do 
-mkdir -p /var/www/html/${VHOST}
-cat << EOF > /etc/httpd/conf.d/${VHOST}.conf
-<VirtualHost *:80>
+# SSL vhost files
+cat << EOF > /etc/httpd/conf.d/${VHOST}-le-ssl.conf 
+<VirtualHost *:443>
 ServerAdmin webadmin@${VHOST}
 ServerName  ${VHOST}
 DocumentRoot /var/www/html/${VHOST}
- 
+
 ErrorLog /var/log/httpd/${VHOST}_error.log
 CustomLog /var/log/httpd/${VHOST}_access.log combined
-</VirtualHost>
+SSLCertificateFile /etc/letsencrypt/live/${VHOST}/cert.pem
+SSLCertificateKeyFile /etc/letsencrypt/live/${VHOST}/privkey.pem
+Include /etc/letsencrypt/options-ssl-apache.conf
+SSLCertificateChainFile /etc/letsencrypt/live/${VHOST}/chain.pem
 EOF
+
+## Create Default "landing pages"
+mkdir -p /var/www/html/${VHOST}
+cat << EOF > /var/www/html/${VHOST}/index.html
+<HTML><HEAD><TITLE> ${VHOST}| Home Page | &#169 2019</TITLE>
+</HEAD>
+<BODY>
+Welcome to ${VHOST}
+</BODY>
+</HTML>
+EOF
+
 done
 
 chown -R apache:apache /var/www/html/
@@ -95,6 +73,9 @@ restorecon -RFvv /var/www/html
 ```
 
 ## Safety Nets (fail2ban)
+Disable Password for SSH  
+Install/configure Fail2Ban  
+
 ```
 cp /etc/ssh/sshd_config  /etc/ssh/sshd_config.`date +%F`
 sed -i -e 's/PasswordAuthentication yes/PasswordAuthentication no/g' /etc/ssh/sshd_config
@@ -122,6 +103,8 @@ do
   echo "/var/www/html/${VHOST}/" | ./certbot-auto certonly -d ${VHOST} --webroot
 done
 
+## Web content
+So, while the redirect *should* occur via the vhost file, I create this as well...
 ```
 cat << EOF > /var/www/html/plex.linuxrevolution.com/index.html
 <HTML><HEAD><TITLE> LinuxRevolution | Plex y'all | &#169 2019</TITLE>
@@ -133,3 +116,5 @@ Gettin after some Plex Yo...
 </HTML>
 EOF
 ```
+
+
