@@ -22,7 +22,7 @@ firewall-cmd --reload
 sed -i -e 's/memory_limit = 128M/;memory_limit = 128M\nmemory_limit = 512M/g' /etc/php.ini
 ```
 
-## Create vhost(s) config files
+## Configure "default" web server configurations, directories and index pages
 ```
 for VHOST in linuxrevolution.com www.linuxrevolution.com plex.linuxrevolution.com music.linuxrevolution.com
 do 
