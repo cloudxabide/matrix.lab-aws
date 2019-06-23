@@ -2,7 +2,7 @@
 
 Task/Objective       | Status | Level of Effort (LOE) <BR> Days | Documentation | Notes
 :-------------------:|:------:|:-------------------------------:|:--------------|:------
-Draft Initial Design | Done   | 3                               |               | Meet with Customer to discuss possibilities and then gather requirements <BE>Scope initial AWS configuration and on-prem environment
+Draft Initial Design | Done   | 3                               |               | Meet with Customer to discuss possible solutions and then gather requirements <BE>Scope initial AWS configuration and on-prem environment
 Deploy ALZ | Done | 2 | | AWS ProServe or Account Team should deploy ALZ for customers <BR> Still working on a publicly consumable repo for this
 Add "Networking" (core) Account | Done | .5 | [alz_add_networking_account.md](lz_add_networking_account.md) | "core" accounts are added via the ALZ manifest
 Configure Transit Gateway <BR> Including VPN | | | | Networking Account

@@ -9,7 +9,7 @@ I also utilize LetsEncrypt to create Certs for the SSL content.
 Assuming you're doing this on CentOS (else you need to add subscription)  
 
 ```
-id -u morpheus &>/dev/null || useradd -u2025 -G10 -c "Morpheus McChicken" -p '$6$MIxbq9WNh2oCmaqT$10PxCiJVStBELFM.AKTV3RqRUmqGryrpIStH5wl6YNpAtaQw.Nc/lkk0FT9RdnKlEJEuB81af6GWoBnPFKqIh.' morpheus
+id -u morpheus &>/dev/null || useradd -u1000 -G10 -c "Morpheus McChicken" -p '$6$MIxbq9WNh2oCmaqT$10PxCiJVStBELFM.AKTV3RqRUmqGryrpIStH5wl6YNpAtaQw.Nc/lkk0FT9RdnKlEJEuB81af6GWoBnPFKqIh.' morpheus
 usermod -a -G apache morpheus
 
 yum -y update
