@@ -1,10 +1,23 @@
-# matrix.lab
-Matrix.lab is my home Lab used for testing Hybrid Cloud consisting of my "Red Hat" on-premesis environment and my AWS environment build using Automated Landing Zone (ALZ).
+# Welcome to matrix.lab
+matrix.lab is my home Lab used for testing Hybrid Cloud consisting of my "Red Hat" on-premises environment and my AWS environment.  I utilize Automated Landing Zone (ALZ) to deploy my AWS resources (similar to what customers are doing).
 
 Version: 2019-05-10
 
 ## Overview
 This repo will detail step-by-step tasks to deploy my Hybrid Cloud.  Some steps have dependencies of earlier tasks and therefore some must be done in order.
+
+Hybrid cloud is a fairly nebulous term.  It may mean:  
+* running in separate environments, but the workload is not distributed other than some shared resources (AD, for example)
+* running in separate environments, and the workload may run in either environment (i.e. myapp.company.com may run in the cloud, or on-prem)
+* running in multiple public clouds (though... this is usually identified by another debatable term "multi-cloud"
+* Or...
+
+I  try not get *too* hung up on what specifically the term means and (rather) focus on what the customer needs in order to get as much value from their IT spend.  Solutions rather than buzzwords.  
+
+Challenge facing many orgainizations:
+* technical debt (they own or have lease contracts for:  facilities, cooling, network, compute, etc...)  
+* refactoring their old code may be cost-prohibitive  
+* they need additional training/resources before they are ready for the cloud
 
 ### The Environments
 * AWS Environment 
@@ -32,7 +45,7 @@ This repo will detail step-by-step tasks to deploy my Hybrid Cloud.  Some steps 
 ![Hybrid Cloud - Homelab - Automated Landing Zone](Images/Hybrid_Cloud-Homelab-Automated_Landing_Zone.png)  
 ### Hybrid DNS - Overview
 ![Hybrid Cloud - DNS](Images/Hybrid_Cloud-Homelab-Automated_Landing_Zone-DNS.png)
-### On-premises 
+### On-premises Infrastructure
 ![On-premises Infrastructure Overview](Images/On-Prem-Infrastructure.png)
 ### Federated Login
 

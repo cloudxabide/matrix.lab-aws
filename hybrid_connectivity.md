@@ -5,7 +5,7 @@ This is very much still a Work In Progress (2019-05-13).
 For the most part, it is whole - I need to still fill in some blanks however.
 
 ## Overview
-This should provide guidance on how you can configure a shared network infrastructure to multiple accounts with Hybrid Connectivity to on-premesis via VPN and Transit Gateway.
+This should provide guidance on how you can configure a shared network infrastructure to multiple accounts with Hybrid Connectivity to on-premises via VPN and Transit Gateway.
 
 ## AWS Resources
 See below for links to the references to see what my Toplogy is and what my subnets (CIDR) looks like.  
