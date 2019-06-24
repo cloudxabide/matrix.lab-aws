@@ -32,6 +32,8 @@ This repo will detail step-by-step tasks to deploy my Hybrid Cloud.  Some steps 
 ![Hybrid Cloud - Homelab - Automated Landing Zone](Images/Hybrid_Cloud-Homelab-Automated_Landing_Zone.png)  
 ### Hybrid DNS - Overview
 ![Hybrid Cloud - DNS](Images/Hybrid_Cloud-Homelab-Automated_Landing_Zone-DNS.png)
+### On-premises 
+![On-premises Infrastructure Overview](Images/On-Prem-Infrastructure.png)
 ### Federated Login
 
 
