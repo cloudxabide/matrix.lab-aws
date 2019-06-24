@@ -1,10 +1,11 @@
 # matrix.lab
-Matrix.lab is my home Lab used for testing Hybrid Cloud with AWS and the AWS Automated Landing Zone (ALZ).
+Matrix.lab is my home Lab used for testing Hybrid Cloud consisting of my "Red Hat" on-premesis environment and my AWS environment build using Automated Landing Zone (ALZ).
 
 Version: 2019-05-10
 
 ## Overview
-This repo chronicles the deployment of a Hybrid Cloud consisting of AWS and an on-premises Open Source cloud (based on community Red Hat bits)  
+This repo will detail step-by-step tasks to deploy my Hybrid Cloud.  Some steps have dependencies of earlier tasks and therefore some must be done in order.
+
 ### The Environments
 * AWS Environment 
   * multi-account (I will deploy Automated Landing Zone (ALZ) in AWS for this test)
