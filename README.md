@@ -26,6 +26,8 @@ This repo will detail step-by-step tasks to deploy my Hybrid Cloud.  Some steps 
   * fairly standard Commodity Off The Shelf (COTS) hardware (Intel NUCs, Asus builds, HPe ML-30s)  
 
 ## Layout
+### Hybrid Cloud Overview
+![Hybrid Cloud - Homelab - Overview](Images/Hybrid_Cloud-Homelab-Overview.png)  
 ### Automated Landing Zone - Overview
 ![Hybrid Cloud - Homelab - Automated Landing Zone](Images/Hybrid_Cloud-Homelab-Automated_Landing_Zone.png)  
 ### Hybrid DNS - Overview
