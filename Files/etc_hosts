@@ -4,7 +4,16 @@
 10.10.10.1   gateway.matrix.lab gateway
 10.10.10.2   switch02.matrix.lab switch01
 10.10.10.9   wifi.matrix.lab wifi
+# Physical Hosts
+10.10.10.10 zion.matrix.lab zion
+10.10.10.11 neo.matrix.lab neo
+10.10.10.12 trinity.matrix.lab trinity
+10.10.10.13 morpheus.matrix.lab morpheus
+10.10.10.17 seraph.matrix.lab seraph
+10.10.10.18 apoc.matrix.lab apoc
+# Virtual Machines
 10.10.10.100 c07-util-srv01.matrix.lab c07-util-srv01 
 10.10.10.110 co7-nms-srv01.matrix.lab co7-nms-srv01
+10.10.10.121 win2k16-ad-srv1.matrix.lab win2k16-ad-srv1
 10.10.10.121 co7-ipa-srv01.matrix.lab co7-ipa-srv01
 10.10.10.122 co7-ipa-srv02.matrix.lab co7-ipa-srv02
