@@ -32,7 +32,7 @@ Challenge facing many orgainizations:
 * Homelab Environment
   * Sophos XG85
   * Cisco SG300-28 Managed Switch
-  * CentOS 7.6 (at the time of writing this)
+  * CentOS 7.6 (at the time of writing this), RHEL 8 (where possible)
   * [OpenShift Container Distribution - okd](https://okd.io) (Essentially the community version of Red Hat OpenShift)
   * [libreNMS](https://www.librenms.org/) 
   * oVirt (Community version Red Hat Virtualization)
