@@ -7,8 +7,8 @@ Version: 2019-05-10
 This repo will detail step-by-step tasks to deploy my Hybrid Cloud.  Some steps have dependencies of earlier tasks and therefore some must be done in order.
 
 Hybrid cloud is a fairly nebulous term.  It may mean:  
-* running in separate environments, but the workload is not distributed other than some shared resources (AD, for example)
-* running in separate environments, and the workload may run in either environment (i.e. myapp.company.com may run in the cloud, or on-prem)
+* running in separate environments, but the workloads are not distributed other than some shared resources (AD, for example)
+* running in separate environments, and the workloads may run in either environment (i.e. myapp.company.com may run in the cloud, or on-prem)
 * running in multiple public clouds (though... this is usually identified by another debatable term "multi-cloud"
 * Or...
 
@@ -16,7 +16,7 @@ I  try not get *too* hung up on what specifically the term means and (rather) fo
 
 Challenge facing many orgainizations:
 * technical debt (they own or have lease contracts for:  facilities, cooling, network, compute, etc...)  
-* refactoring their old code may be cost-prohibitive  
+* refactoring old code may be cost-prohibitive, or nearly impossible
 * they need additional training/resources before they are ready for the cloud
 
 ### The Environments
