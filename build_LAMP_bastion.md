@@ -73,7 +73,7 @@ restorecon -RFvv /var/www/html
 ```
 
 ## Safety Nets (fail2ban)
-Disable Password for SSH  
+Disable Password for SSH (make sure you have your SSH keys already deployed to host)
 Install/configure Fail2Ban  
 
 ```
@@ -100,6 +100,7 @@ yum -y install certbot python2-certbot-apache
 
 for VHOST in linuxrevolution.com www.linuxrevolution.com plex.linuxrevolution.com music.linuxrevolution.com
 do 
+  # This may not work - you might have to manually execute this step when your certs expire :-(
   echo "/var/www/html/${VHOST}/" | ./certbot-auto certonly -d ${VHOST} --webroot
 done
 ```
