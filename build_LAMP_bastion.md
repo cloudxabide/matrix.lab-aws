@@ -5,7 +5,7 @@ I deploy a bastion host with a LAMP stack to provide HTTP/HTTPS until OKD is spu
 I also utilize LetsEncrypt to create Certs for the SSL content.
 
 
-## Install and Configure the LAMP 
+## Install and Configure LAMP and libreNMS
 NOTE: Assuming you're doing this on CentOS (else you need to add subscription)  
 - Install CentOS 7 on your host  
 - run the ["finish script"](Build/finish_co7-nms-srv01.sh)
