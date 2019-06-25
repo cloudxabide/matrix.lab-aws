@@ -40,12 +40,16 @@ Challenge facing many orgainizations:
 
 ## Layout
 ### Hybrid Cloud Overview
+A visual representation of the 2 locations which I will be managing and the components in each location.  
 ![Hybrid Cloud - Homelab - Overview](Images/Hybrid_Cloud-Homelab-Overview.png)  
 ### Automated Landing Zone - Overview
+Here you can see the accounts deployed in AWS as part of the Automated Landing Zone.  
 ![Hybrid Cloud - Homelab - Automated Landing Zone](Images/Hybrid_Cloud-Homelab-Automated_Landing_Zone.png)  
 ### Hybrid DNS - Overview
+Review the DNS configuration being implemented.  
 ![Hybrid Cloud - DNS](Images/Hybrid_Cloud-Homelab-Automated_Landing_Zone-DNS.png)
 ### On-premises Infrastructure
+The resources I am managing at my "on-premises" location.  
 ![On-premises Infrastructure Overview](Images/On-Prem-Infrastructure.png)
 ### Federated Login
 
