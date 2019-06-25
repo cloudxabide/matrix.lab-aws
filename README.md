@@ -49,7 +49,7 @@ Here you can see the accounts deployed in AWS as part of the Automated Landing Z
 Review the DNS configuration being implemented.  
 ![Hybrid Cloud - DNS](Images/Hybrid_Cloud-Homelab-Automated_Landing_Zone-DNS.png)
 ### On-premises Infrastructure
-The resources I am managing at my "on-premises" location.  
+The resources I am managing at my "on-premises" location and identifies specific hardware/hypervisors being utilized.  
 ![On-premises Infrastructure Overview](Images/On-Prem-Infrastructure.png)
 ### Federated Login
 
