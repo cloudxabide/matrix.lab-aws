@@ -12,7 +12,7 @@ Hybrid cloud is a fairly nebulous term.  It may mean:
   * Website hosted us-west-2  
 * running in separate environments, and the workloads may run in either environment (i.e. myapp.company.com may run in the cloud, or on-prem)
   * Full Stack could be available in us-east-1, us-west2, and on-prem (depending on geo proximity)  
-* running in multiple public clouds (though... this is usually identified by another debatable term "multi-cloud"
+* running in multiple public clouds (though... this is usually identified by another debatable term "multi-cloud")
 * Or...
 
 I  try not get *too* hung up on what specifically the term means and (rather) focus on what the customer needs in order to get as much value from their IT spend.  Solutions rather than buzzwords.  
