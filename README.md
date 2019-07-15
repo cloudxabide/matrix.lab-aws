@@ -11,6 +11,7 @@ Hybrid cloud is a fairly nebulous term.  It may mean:
   * SAP running in us-east-1   
   * Website hosted us-west-2  
 * running in separate environments, and the workloads may run in either environment (i.e. myapp.company.com may run in the cloud, or on-prem)
+  * Full Stack could be available in us-east-1, us-west2, and on-prem (depending on geo proximity)  
 * running in multiple public clouds (though... this is usually identified by another debatable term "multi-cloud"
 * Or...
 
