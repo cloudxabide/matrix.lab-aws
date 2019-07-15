@@ -7,7 +7,7 @@ Version: 2019-05-10
 This repo will detail step-by-step tasks to deploy my Hybrid Cloud.  Some steps have dependencies of earlier tasks and therefore some must be done in order.
 
 Hybrid cloud is a fairly nebulous term.  It may mean:  
-* running in separate environments, but the workloads are not distributed other than some shared resources (AD, for example)
+* running in separate environments, but the workloads are not distributed other than some shared resources (AD, for example)  
  * SAP running in us-east-1  
  * Website hosted us-west-2
 * running in separate environments, and the workloads may run in either environment (i.e. myapp.company.com may run in the cloud, or on-prem)
