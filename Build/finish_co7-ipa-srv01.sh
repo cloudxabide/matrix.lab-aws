@@ -51,7 +51,6 @@ klist
 ipa dnszone-add 10.10.10.in-addr.arpa.  # "public"
 ipa dnsrecord-add matrix.lab co7-idm-srv01 --a-rec 10.10.10.121
 ipa dnsrecord-add matrix.lab co7-idm-srv02 --a-rec 10.10.10.122
-ipa dnsrecord-add 10.10.10.in-addr.arpa 120 --ptr-rec win2k16-ad-srv1.matrix.lab.
 ipa dnsrecord-add 10.10.10.in-addr.arpa 121 --ptr-rec co7-idm-srv01.matrix.lab.
 ipa dnsrecord-add 10.10.10.in-addr.arpa 122 --ptr-rec co7-idm-srv02.matrix.lab.
 ipa dnszone-mod --allow-transfer='192.168.0.0/24;10.0.0.0/8;127.0.0.1' matrix.lab.
