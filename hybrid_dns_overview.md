@@ -3,8 +3,7 @@
 ## Overview
 Hybrid DNS has been one of the more challenging aspects of a hybrid cloud architecture.  I feel this is due to a number of factors:
 * highly personalized based on the approach a person (company) has become familiar  
-* there are so many possible ways to "do it right" (too many options make *any* option difficult to chose)  
-*
+* there are so many possible ways to "do it right" (and... too many options make *any* option difficult to chose)  
 
 So - for my example hybrid cloud I have an on-prem environment (legacy) and my new shiny #awsome cloud hosted by AWS.
 
@@ -12,16 +11,16 @@ I use several Top-Level Domains for public access (as well as on-prem) and terti
 
 domain                   | Public or Private | location   | DNS provider   | purpose
 :------------------------|:-----------------:|:-----------|:---------------|:---------
-cloudXabide.com          | Public            | N/A        | route 53       | Parent domain for public presence 
-awscloud.cloudXabide.com | Public            | AWS cloud  | route 53       | Provide DNS resolution for publicly accessible AWS cloud end-points
+clouditoutloud.com          | Public            | N/A        | route 53       | Parent domain for public presence 
+awscloud.clouditoutloud.com | Public            | AWS cloud  | route 53       | Provide DNS resolution for publicly accessible AWS cloud end-points
 linuxrevolution.com      | Public            | Homelab    | route 53       | Parent domain for publicly accessible on-prem end-points
 matrix.lab               | Private           | Homelab    | freeIPA        | Parent domain for Homelab resources (internal only)
 CORP.matrix.lab          | Private           | Homelab    | Windows AD     | Domain for Homelab Windows Domain resources (internal only)
 
-## cloudXabide.com
+## clouditoutloud.com
 Domain I use for public testing 
 
-### awscloud.cloudXabide.com
+### awscloud.clouditoutloud.com
 Tertiary domain used to identify resources hosted AWS cloud
 
 ## matrix.lab
