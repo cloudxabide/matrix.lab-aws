@@ -4,7 +4,6 @@
 #                 and fetch the configuration parameters from a configuration file
 #               I created it to primarily save myself some time creating VMs in my lab.
 #  Author:      James Radtke <jradtke@redhat.com>
-#  Maintainer:  James Radtke <jaradtke@amazon.com>
 #   NOTES:      This is NOT a Red Hat supported work, nor AWS
 
 # VARS
